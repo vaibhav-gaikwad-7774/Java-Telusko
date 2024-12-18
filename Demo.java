@@ -1,24 +1,20 @@
-@FunctionalInterface
-interface A {
-    void show();
-
-}
-
-// class B implements A {
-// public void show() {
-// System.out.println("In show");
-// }
-// }
-
 public class Demo {
     public static void main(String[] args) {
 
-        A obj = new A() {
-            public void show() {
-                System.out.println("In show");
-            }
-        };
+        int i = 4;
+        int j = 0;
 
-        obj.show();
+        try {
+
+            j = 18 / i;
+
+        } catch (Exception e) {
+            System.out.println("its a system fault");
+        }
+
+        System.out.println(j);
+
+        System.out.println("bye");
+
     }
 }
