@@ -1,8 +1,8 @@
 
 class vaibhavException extends Exception {
     public vaibhavException(String string) {
+        super(string);
 
-        System.out.println("this is my personal exception which i created ");
     }
 }
 
