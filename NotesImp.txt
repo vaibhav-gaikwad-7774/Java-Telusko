@@ -178,3 +178,40 @@ user laa pudhche opration kryla permission deto with certain message ki fault
 ahe pudhche msg or statement execute kr 
 
 done -- 9.30
+
+
+class vaibhavException extends Exception {
+    public vaibhavException(String string) {
+
+        System.out.println("this is my personal exception which i created ");
+    }
+}
+
+public class throwKey {
+    public static void main(String[] args) {
+
+        int i = 0;
+        int j = 0;
+
+        try {
+            j = 18 / i;
+            if (j == 0)
+                throw new vaibhavException("i dont want to print 0");
+        }
+
+        catch (ArithmeticException e) {
+            j = 18 / 1;
+            System.out.println("Thats the default value" + e);
+
+        }
+
+        catch (Exception e) {
+            System.out.println("Something went wrong");
+        }
+        System.out.println(j);
+        System.out.println("bye");
+
+    }
+
+}
+
