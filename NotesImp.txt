@@ -272,6 +272,7 @@ public class throwsKey {
 
 }
 
+
 Throwskeyword use:
 
 
@@ -300,3 +301,10 @@ public class throwsKey {
     }
 
 }
+
+
+
+10. 3 Input from the User which is i think scanner:
+
+
+>>>>>>> 9f4ac7c (20 Dec)
