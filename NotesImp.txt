@@ -313,6 +313,9 @@ public class throwsKey {
 
 notes example
 
+input from the user 
+
+
 
 public class Input {
     public static void main(String[] args) {
