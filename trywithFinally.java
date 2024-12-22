@@ -5,9 +5,8 @@ public class trywithFinally {
 
         int num = 0;
 
-        try {
+        try (Scanner sc = new Scanner(System.in);) {
 
-            Scanner sc = new Scanner(System.in);
             System.out.println("Enter the Number which is you want to print: ");
             num = sc.nextInt();
 

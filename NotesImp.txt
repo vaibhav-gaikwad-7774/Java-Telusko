@@ -455,3 +455,85 @@ public class trywithFinally {
 
 
 10.20 onwords dec 22
+
+finnalyy used for clossing the resourcess:
+
+try with resourcess which is used to declare the statement directly
+like these code
+
+"   try (Scanner sc = new Scanner(System.in);) {
+
+            System.out.println("Enter the Number which is you want to print: ");
+            num = sc.nextInt();
+
+            System.out.println(num);
+
+        } finally
+
+        {
+            // sc.close();
+
+        }
+
+    }
+}"
+
+threads in java:
+dividing the task in to multiple threads which is used to doing
+
+
+
+Threads will ve used like these which is defineltely like these :
+
+
+"class A extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("Hi");
+        }
+    }
+}
+
+class B extends Thread {
+    public void run() {
+        for (int i = 1; i <= 100; i++) {
+            System.out.println("hello");
+        }
+    }
+}
+
+public class Threads {
+    public static void main(String[] args) {
+        A obj1 = new A();
+        B obj2 = new B();
+
+        obj1.start();
+        obj2.start();
+
+    }
+
+}
+"
+
+We can not decide to excecute the thread whic is scheduling 
+we cant deside the things Thats
+the threads will be the only suggest the things to the thread to escecute the thread one 
+by one 
+
+
+These is how we can set the priority which we cant decide:
+
+    public static void main(String[] args) {
+        A obj1 = new A();
+        B obj2 = new B();
+
+        System.out.println(obj1.getPriority());
+
+        obj2.setPriority(Thread.MAX_PRIORITY);
+
+        obj1.start();
+        obj2.start();
+
+    }
+
+}
