@@ -790,3 +790,170 @@ public class ThreadSafe {
     }
 
 }
+
+
+11.11 Collection 
+
+collection API
+collection
+collections
+
+Collection which implements list queue set
+list: ArrayList, linkedlist
+
+queue: Dequeue
+
+set: hashSet, linkedHashset
+ 
+
+
+ import java.util.ArrayList;
+import java.util.Collection;
+
+public class CollectionDemo {
+    public static void main(String[] args) {
+        Collection<Integer> nums = new ArrayList<Integer>();
+        nums.add(6);
+        nums.add(5);
+        nums.add(7);
+        nums.add(2);
+        nums.add(1);
+
+        for (int n : nums) {
+            System.out.println(n);
+        }
+
+        // System.out.println(nums);
+
+    }
+
+}
+ --6
+5
+7
+2
+1
+[6, 5, 7, 2, 1]
+
+
+when we declare a colledtion is need to declare the type of the Collection
+which we are usiing to the proper 
+
+
+"import java.util.ArrayList;
+import java.util.Collection;
+
+public class CollectionDemo {
+    public static void main(String[] args) {
+        Collection<Integer> nums = new ArrayList<Integer>();
+        nums.add(6);
+        nums.add(5);
+        nums.add(7);
+        nums.add(2);
+        nums.add(1);
+
+        for (int n : nums) {
+            System.out.println(n);
+        }
+
+        // System.out.println(nums);
+
+    }
+
+}
+"
+
+
+##############
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CollectionDemo {
+    public static void main(String[] args) {
+        List<Integer> nums = new ArrayList<Integer>();
+        nums.add(6);
+        nums.add(5);
+        nums.add(7);
+        nums.add(2);
+        nums.add(1);
+
+        System.out.println(nums.get(2));
+
+        for (int n : nums) {
+            int num = (Integer) n;
+            System.out.println(num * 2);
+        }
+
+        // System.out.println(nums);
+
+    }
+
+}
+#################
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CollectionDemo {
+    public static void main(String[] args) {
+        List<Integer> nums = new ArrayList<Integer>();
+        nums.add(6);
+        nums.add(5);
+        nums.add(7);
+        nums.add(2);
+        nums.add(1);
+
+        System.out.println(nums.get(2));
+
+        // for (int n : nums) {
+        // int num = (Integer) n;
+        // System.out.println(num * 2);
+        // }
+
+        // System.out.println(nums);
+
+    }
+
+}
+##########
+
+
+List:
+
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class CollectionDemo {
+    public static void main(String[] args) {
+        List<Integer> nums = new ArrayList<Integer>();
+        nums.add(6);
+        nums.add(5);
+        nums.add(7);
+        nums.add(2);
+        nums.add(1);
+        nums.add(6);
+
+        // System.out.println(nums.get(2));
+
+        for (int n : nums) {
+            int num = (Integer) n;
+            System.out.println(num * 2);
+        }
+
+        // System.out.println(nums);
+
+    }
+
+}
+######
+
+
+hashset makes the sorted unrepeted numbers which is want to be print
+
+
+
+
+
