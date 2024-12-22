@@ -16,7 +16,7 @@ public class throwsKey {
         try {
             obj.show();
         } catch (ClassNotFoundException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         }
 
