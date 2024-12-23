@@ -7,51 +7,40 @@ class Student {
     int age;
     String name;
 
-    
     public Student(int age, String name) {
         this.age = age;
         this.name = name;
     }
 
-
     @Override
     public String toString() {
         return "Student [age=" + age + ", name=" + name + "]";
     }
-
-    
 }
-
-
 
 public class Sorting {
     public static void main(String[] args) {
 
-        Comparator <Integer> com = new Comparator<Integer>() {
-            public int compare(Integer i, Integer j){
-                if (i%10 > j%10) {
-                    return 1;
-                }
-                else {
-                    return -1;
-                }
-
+        // Comparator to sort Students by age
+        Comparator<Student> com = new Comparator<Student>() {
+            public int compare(Student i, Student j) {
+                return Integer.compare(i.age, j.age); // Simplified comparison
             }
         };
 
+        List<Student> students = new ArrayList<>();
+        students.add(new Student(21, "Vaibhav"));
+        students.add(new Student(23, "Ankur"));
+        students.add(new Student(54, "Gita"));
+        students.add(new Student(77, "Pradnya"));
+        students.add(new Student(88, "Sakshi"));
 
-        List<Student> nums =  new ArrayList<>();
-        nums.add(new Student(21, "Vaibhav"));
-        nums.add(new Student(23, "ankur"));
-        nums.add(new Student(54, "gita"));
-        nums.add(new Student(77, "pradnya"));
-        nums.add(new Student(88, "sakshi"));
+        // Sorting using custom comparator
+        Collections.sort(students, com);
 
-        Collections.sort(nums, com);
-        System.out.println(nums);
-
-
-        
+        // Printing the sorted list
+        for (Student s : students) {
+            System.out.println(s);
+        }
     }
-    
 }
