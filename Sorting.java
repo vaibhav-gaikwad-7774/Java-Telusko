@@ -3,7 +3,7 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-class Student {
+class Student implements Comparable<Student> {
     int age;
     String name;
 
@@ -16,18 +16,24 @@ class Student {
     public String toString() {
         return "Student [age=" + age + ", name=" + name + "]";
     }
+
+    // Implementing the compareTo method for comparing by age
+    @Override
+    public int compareTo(Student that) {
+        if (this.age > that.age) {
+            return 1;
+        } else if (this.age < that.age) {
+            return -1;
+        } else {
+            return 0; // This handles the case when both students have the same age
+        }
+    }
 }
 
 public class Sorting {
     public static void main(String[] args) {
 
-        // Comparator to sort Students by age
-        Comparator<Student> com = new Comparator<Student>() {
-            public int compare(Student i, Student j) {
-                return Integer.compare(i.age, j.age); // Simplified comparison
-            }
-        };
-
+        // Creating a list of students
         List<Student> students = new ArrayList<>();
         students.add(new Student(21, "Vaibhav"));
         students.add(new Student(23, "Ankur"));
@@ -35,8 +41,8 @@ public class Sorting {
         students.add(new Student(77, "Pradnya"));
         students.add(new Student(88, "Sakshi"));
 
-        // Sorting using custom comparator
-        Collections.sort(students, com);
+        // Sorting using the compareTo method implemented in the Student class
+        Collections.sort(students);
 
         // Printing the sorted list
         for (Student s : students) {
