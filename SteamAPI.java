@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class SteamAPI {
     public static void main(String[] args) {
@@ -7,7 +8,9 @@ public class SteamAPI {
 
         // Consumer<Integer> con = n -> System.out.println(n);
 
-        nums.forEach(n -> System.out.println(n));
+        Stream<Integer> s1 = nums.stream();
+
+        s1.forEach(n -> System.out.println(n));
 
         // for (int i = 0; i < nums.size(); i++) {
         // System.out.println(i);
