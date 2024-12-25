@@ -1527,5 +1527,7 @@ public class SteamAPI {
 
 12.31
 
+java 21 updates
+
 
 
