@@ -1529,5 +1529,79 @@ public class SteamAPI {
 
 java 21 updates
 
+void main{
+    System.out.println("hellow world")
+}
 
 
+LVTI
+local variants type interface
+
+"public class LVTI {
+    // var num = 10;
+    // var keywrd cant used as a class name
+
+    public static void main(String[] args) {
+        int a = 9;
+        var b = 8;
+        // System.out.println(num);
+        String var = "Vaibhav";
+
+        int c;
+        // var d; // when we intialize the any variable with the
+        // var type we need to definitely assign the value of the
+        // integer in the following array type
+
+        int nums[] = new int[10];
+
+        var nums1 = new int[10]; // is allowed
+
+        var obj = new Alien();
+    }
+
+}
+
+"
+12.48
+
+Seales classes:
+"sealed class A permits B, C {
+
+}
+
+final class B extends A {
+
+}
+
+final class C extends A {
+
+}
+
+class D {
+
+}
+
+public class SealedClass {
+    public static void main(String[] args) {
+
+    }
+
+}
+"
+when we declare krto na class sealed tevha aplyala jr ti class selaed krychi asel
+tr till keyword use krycha start la ani jya class la dyaychay na fkt 
+tya class cha name Sealed class A  permits A,B{
+    asa yenar
+}
+anu class B and c mdhe aplyala te proper mention krava lagel
+either selaed non selaed and otherwise the final class krun proper like
+final class B extends A{
+
+}  same ashich c chi class asnare like :
+
+final class C extends A {
+
+}
+
+function is used to design the proper classes 
+these 
