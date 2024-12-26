@@ -1643,3 +1643,52 @@ public class SealedClass {
         System.out.println("Sealed class example executed.");
     }
 }
+
+
+Records class: 12.57
+
+THE LONG code will be converted into the following code which is :
+
+public record Alien1(int id, String name) {
+
+
+    example like these : 
+
+    // public record Alien1(int id, String name) {
+// }
+
+public class Project {
+    public static void main(String[] args) {
+        Alien1 a1 = new Alien1(1, "Vaibhav");
+        Alien1 a2 = new Alien1(1, "Vaibhav");
+
+        System.out.println(a1); // Alien1[id=1, name=Vaibhav]
+        System.out.println(a2); // Alien1[id=1, name=Vaibhav]
+
+        // Testing equality
+        System.out.println("a1 equals a2: " + a1.equals(a2)); // true
+    }
+
+
+
+
+}
+
+
+shorter example of the code whic is :
+
+package mypackage;
+
+public record Student(int rollNo, String name) {
+}
+
+public class Project {
+    public static void main(String[] args) {
+        mypackage.Student s1 = new mypackage.Student(101, "Alice");
+        mypackage.Student s2 = new mypackage.Student(101, "Alice");
+
+        System.out.println(s1); // Student[rollNo=101, name=Alice]
+        System.out.println(s2); // Student[rollNo=101, name=Alice]
+        System.out.println("s1 equals s2: " + s1.equals(s2)); // true
+    }
+}
