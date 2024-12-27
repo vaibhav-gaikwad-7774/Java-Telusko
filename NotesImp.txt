@@ -1672,6 +1672,8 @@ public class Project {
 
 
 
+
+
 }
 
 
@@ -1692,3 +1694,68 @@ public class Project {
         System.out.println("s1 equals s2: " + s1.equals(s2)); // true
     }
 }
+
+
+
+13.12
+
+in record class the variable type which is been initialize at the time of 
+the declaration of the statring of record class
+and the theese will do with the help of the 
+constructor with proper defining the value of the like the followin example:
+
+
+"record Alien(int id, String name) implements Cloneable {"
+
+"record Alien(int id, String name) implements Cloneable {
+    static int num;
+    // int age; not declared in the followiing way
+
+    public Alien {
+        if (id == 0) {
+            throw new IllegalArgumentException();
+        }
+
+    }
+
+    public void show() {
+
+    }
+
+    // public Alien(int id, String name) {
+    // this.id = id;
+    // this.name = name;
+    // }
+
+}
+
+public class Record {
+    public static void main(String[] args) {
+        Alien a1 = new Alien(1, "vaibhav");
+        Alien a2 = new Alien(1, "navin");
+
+        System.out.println(a1.equals(a2));
+        System.out.println(a1.name());
+
+    }
+
+}
+"
+
+
+Junit class (13.13)
+
+
+prerequisite of learning Junit
+
+java
+Junit(Theory+practicle)
+outcome:Junit 
+
+
+SDLC-->
+
+design-->develop the application-->testing of application-->
+
+unit testing means testing a application by small unit by unit
+
