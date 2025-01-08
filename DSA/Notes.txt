@@ -1,0 +1,36 @@
+Notes of DataStructure which is help to recall the function:
+
+16.5:
+
+primitive data type:
+how to save the data and save the memory and managing the data with more dynamicn ways
+
+algo is set of instruction
+the Raw action whichh is easily understand the user to what to do is the pseudo code
+like the bello :
+
+input a
+input b
+sum a+b
+output sum
+
+its imp to make fast process to do the certain operation in the bellow 
+
+the speed of Any application will be increased by the DataStructure
+
+We have types of DataStructure
+list
+linkedlist
+array 
+set
+tree 
+graph
+
+16.12:
+ADT(Abstract data type)
+
+data is used for the 
+data collection
+data processing
+data output
+data storage
