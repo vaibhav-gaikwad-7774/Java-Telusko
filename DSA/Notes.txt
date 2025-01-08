@@ -34,3 +34,11 @@ data collection
 data processing
 data output
 data storage
+
+Concept and Datatype which is used to define the DataStructure
+which is called thw abstract data type 
+
+
+16:19
+Arrays:
+
