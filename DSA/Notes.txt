@@ -40,5 +40,5 @@ which is called thw abstract data type
 
 
 16:19
-Arrays:
+Arrays:qaa
 
