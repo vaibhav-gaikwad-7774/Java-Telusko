@@ -42,3 +42,62 @@ which is called thw abstract data type
 16:19
 Arrays:qaa
 
+
+
+With the help of the ADT we can do the Different
+operation which is really usefull for the data managing 
+on array
+
+like finding the number of address:
+searchig of elements:
+inserting num
+deleting 
+ 
+
+ time taken for any operation which having to do the 
+ array:
+ Time complaxity will define the code effieciency
+
+Time complaxity:
+
+algo analysis:
+space and time complaxity play imp role in the code
+
+searchig elements in a sorted array having the 
+two mainly method which is :
+
+linear search and
+binary search
+
+
+Linear Search:
+
+5 7 9 12 17 
+
+target us 12 then we can compare the Each elements
+ 
+when we finding the 1 elememts is easy but havingthe 4th element is
+is little bit tricky we have to check the Each Elemenmt with the starting and upto the Ending 
+
+
+Linear Search pseudo algorithm which is like the follow:
+
+linear Search (A: list of Items, Target: the Item which we are searching)
+
+firstly find the lengh of the A and Store it in a variable
+like these n = lenght of a
+
+then with using the if condition we can search the element untill
+find target of Elemenmt like these
+if A[i] equals target then
+return i //return the Index for the Elemement which is found
+and if
+element is not found then end the procedure
+end statement and print the Element is not Found:
+
+like these 
+end for return -1 //if the targeted Element is not found in the Arrays
+end procedure
+
+16.33
+
