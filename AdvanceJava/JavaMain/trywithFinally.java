@@ -1,3 +1,4 @@
+package JavaMain;
 import java.util.Scanner;
 
 public class trywithFinally {

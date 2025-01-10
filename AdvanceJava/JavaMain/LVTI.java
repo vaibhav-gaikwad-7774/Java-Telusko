@@ -1,3 +1,4 @@
+package JavaMain;
 public class LVTI {
     // var num = 10; // Not allowed: `var` cannot be used as a class-level field
 

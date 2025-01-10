@@ -1,3 +1,4 @@
+package JavaMain;
 class Counter {
     int count;
 

@@ -1,3 +1,4 @@
+package JavaMain;
 
 class vaibhavException extends Exception {
     public vaibhavException(String string) {

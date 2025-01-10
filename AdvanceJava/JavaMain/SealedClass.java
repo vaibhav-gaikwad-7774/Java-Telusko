@@ -1,3 +1,4 @@
+package JavaMain;
 sealed class A extends Thread implements Cloneable permits B, C {
     // Class A logic
 }

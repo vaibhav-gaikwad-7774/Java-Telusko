@@ -101,3 +101,7 @@ end procedure
 
 16.33
 
+binary Search:
+
+
+
