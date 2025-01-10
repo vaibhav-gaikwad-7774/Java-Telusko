@@ -103,5 +103,24 @@ end procedure
 
 binary Search:
 
+lets having array
 
+pseuso code for the Binary search tree:
+
+BST(A:list of Sorted Item, Target : which is we searching for)
+left = 0;
+right = lenght(A)-1
+
+while left <= right
+ mid = (left + right)/2
+ ifA [mid] equals to target then
+ return mid // return the index where the element is present at the array
+ else if A[mid] < target then
+ left = mid + 1// continue the search to the right side of the array
+ else
+ right = mid -1 // continue to search at the left side of the Arrays
+ end if
+ end while
+
+ return -1 //if the target element is not equals to the list
 
