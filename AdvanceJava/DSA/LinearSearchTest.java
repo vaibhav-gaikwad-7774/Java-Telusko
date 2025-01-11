@@ -2,7 +2,7 @@ package DSA;
 
 public class LinearSearchTest {
     public static void main(String[] args) {
-        int A[] = {1, 3, 4, 5, 6};
+        int A[] = { 1, 3, 4, 5, 6 };
         int Target = 6;
         int n = A.length;
 
