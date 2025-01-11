@@ -103,5 +103,5 @@ end procedure
 
 binary Search:
 
-
+if we having the o
 
