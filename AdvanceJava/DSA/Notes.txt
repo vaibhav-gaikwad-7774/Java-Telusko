@@ -158,3 +158,10 @@ O(1) constant time
 log n
 
 16.47
+
+practicle implementation 
+
+Binary Search:
+
+linear search with the O(n)
+Binary search with the O(log n)
