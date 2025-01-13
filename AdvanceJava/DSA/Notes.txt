@@ -128,3 +128,33 @@ while left <= right
  return -1 //if the target element is not equals to the list
 >>>>>>> 340467352964eb277ffa3b16133988b1de05f4a9
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+binary search: 
+16:35
+
+
+time complaxity:
+big O notation:
+O(1) constant time
+log n
+
+16.47
