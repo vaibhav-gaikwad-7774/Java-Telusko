@@ -147,7 +147,6 @@ while left <= right
 
 
 
-
 binary search: 
 16:35
 
