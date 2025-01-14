@@ -2,21 +2,28 @@ package DSA;
 
 public class LinearSearchTest {
     public static void main(String[] args) {
-        int A[] = { 1, 3, 4, 5, 6 };
-        int Target = 6;
-        int n = A.length;
+        int nums[] = { 1, 3, 4, 5, 6 };
+        int target = 6;
 
-        int result = -1;
-        for (int i = 0; i < n; i++) {
-            if (A[i] == Target) {
-                result = i;
-                break;
-            }
-        }
-        if (result != -1) {
-            System.out.println("Element is found at index: " + result);
-        } else {
+        int result = linearSearch(nums, target);
+
+        if (result != -1){
+            System.out.println("Element found at index : "+ result);
+        }else{
             System.out.println("Element is not found");
         }
-    }
+
+            }
+        
+            public static int linearSearch(int[] nums, int target) {
+                for(int i = 0; i<nums.length; i++){
+                    if(nums[i] == target)
+                    return i;
+                }            
+                
+                return -1;
+                
+                
+            }
 }
+        
