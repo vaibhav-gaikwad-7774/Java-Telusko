@@ -285,3 +285,59 @@ public class BubbleSortScan {
 }
 Selection Sorting :
  sorting in dependance to the greater vale over array
+Selecton sorting which is Depends on the Bellow:
+
+"package DSA;
+
+public class SelectionSort {
+    public static void main(String[] args) {
+        int nums[] = {3,7,3,1,5,7,8};
+        int size = nums.length;
+        int temp = 0;
+        int minIndex = -1;
+
+        System.out.println("Before Sorting");
+        for (int num : nums) {
+            System.out.print(num + " ");
+        }
+
+        for(int i = 0; i<size-1; i++){
+            minIndex  = i;
+            for (int j = i; j<size; j++){
+                if(nums[minIndex]>nums[j]){
+                    minIndex = j;
+                }
+            }
+            temp = nums[minIndex];
+             nums[minIndex]= nums[i];
+             nums[i] = temp ;
+             }
+
+        
+        
+
+        System.out.println();
+        System.out.println("after Sorting");
+        for (int num : nums) {
+            System.out.print(num + " ");
+        }
+
+        
+
+    }
+}" Selection sort Example:
+
+
+insertion sort:
+
+shifting depends on the Value Greaater than 
+and start comparing with the last:
+
+
+we want the Variables which is i, j,key
+arr{5,6,7,3,6,8}
+while(){
+
+}
+
+//17.49
