@@ -383,6 +383,7 @@ O(nlog(n))
 
 
 1. divide and conquer
+recursions
 2. pivit its a central element which is in the array
 3. creating the Treee liike a structure:
 
@@ -391,6 +392,7 @@ make a tree like structure with using the
 pivit:
  partition of the array 
  whichis having the right position
+
 
 
 
